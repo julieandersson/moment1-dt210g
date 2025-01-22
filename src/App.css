@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* global styling */
 body {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@ body {
     font-size: 1em;
 }
 
+/* placerar resekorten i en grid med 3 på varje rad */
 .trip-card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
