@@ -6,9 +6,12 @@ interface HeaderProps {
 
 function Header({ title }: HeaderProps) {
   return (
-    <header style={{ fontSize: "0.9em", textAlign: "center" }}>
+    <>
+    <header style={{ fontSize: "1.3em", textAlign: "center" }}>
         <h1>{title}</h1>
     </header>
+    <img src="/banner.jpg" alt="Banner" style={{ width: "100%", height: "auto" }} />
+    </>
   )
 }
 
