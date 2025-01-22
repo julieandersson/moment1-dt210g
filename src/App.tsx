@@ -1,9 +1,16 @@
+import './App.css'
+import TripCard from './components/TripCard'
 
 function App() {
 
   return (
     <>
-    <h1>Testrubrik</h1>
+    <section>
+    <h1>Resor</h1>
+    <TripCard country={"USA"} city={"New York"} days={"7"} />
+    <TripCard />
+    <TripCard />
+    </section>
     </>
   )
 }
