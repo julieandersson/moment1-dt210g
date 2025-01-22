@@ -1,0 +1,7 @@
+/* Tablet */
+
+@media (max-width: 899px) {
+    .trip-card-title {
+        font-size: 1.1em !important;
+    }
+}
