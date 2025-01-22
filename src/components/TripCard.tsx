@@ -8,8 +8,8 @@ interface TripCardsProps {
 function TripCard({country, city, days, visited}: TripCardsProps) {
   return (
     <section style={{backgroundColor: "pink", padding: "20px", marginTop: "2em", borderRadius: "25px"}}>
-    <h2>{country}</h2>
-    <p>Stad: {city}</p>
+    <h2 style={{fontSize: "1.2em"}}>{country}</h2>
+    <p style={{fontSize: "1em"}}>Stad: {city}</p>
     <p>Antal dagar: {days}</p>
     <p>Besökt: {visited ? "Ja" : "Nej"}</p>
   </section>
