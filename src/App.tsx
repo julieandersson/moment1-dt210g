@@ -46,7 +46,7 @@ function App() {
   
   return (
     <>
-    <Header />
+    <Header title="Min reseöversikt"/>
       <section>
         <h1 style={{textAlign: "center", fontSize: "1.6em"}}>Resor</h1>
             {tripArr.map((trip, index) => (
