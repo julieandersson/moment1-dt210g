@@ -47,8 +47,10 @@ function App() {
   return (
     <>
     <Header title="Min reseöversikt"/>
+    <main>
       <section>
         <h1 style={{textAlign: "center", fontSize: "1.6em"}}>Resor</h1>
+        <div className="trip-card-container">
             {tripArr.map((trip, index) => (
               <TripCard
               country={trip.country}
@@ -57,7 +59,9 @@ function App() {
               visited={trip.visited}
               key={index}/>
             ))}
+          </div>
       </section>
+    </main>
 
       <Footer />
     </>
