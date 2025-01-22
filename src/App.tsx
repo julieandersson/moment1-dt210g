@@ -1,5 +1,7 @@
 import './App.css'
 import TripCard from './components/TripCard'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -44,12 +46,20 @@ function App() {
   
   return (
     <>
+    <Header />
       <section>
         <h1 style={{textAlign: "center", fontSize: "1.6em"}}>Resor</h1>
             {tripArr.map((trip, index) => (
-              <TripCard country={trip.country} city={trip.city} days={trip.days} visited={trip.visited} key={index}/>
+              <TripCard
+              country={trip.country}
+              city={trip.city}
+              days={trip.days}
+              visited={trip.visited}
+              key={index}/>
             ))}
       </section>
+
+      <Footer />
     </>
   )
 }
